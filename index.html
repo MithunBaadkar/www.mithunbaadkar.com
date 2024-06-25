@@ -1,14 +1,125 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <script type="module" crossorigin src="/assets/index-pxaXup3h.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Dbmet2eh.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stortcut icon" href="./Assets/pngs/FeviconIcon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Assets/ui.css">
+    <title>MITHUN BAADKAR</title>
+</head>
+<body>
+    <main>
+        <header>
+            <img class="baadkarlogo" alt="LOGO" src="./Assets/pngs/FullLOGOwhite.png">
+            <nav>
+                <ul>
+                    <li id="abouti" class="about">
+                        <a class="navtext" href="./Assets/about.html"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a>
+                    </li>
+                    <li id="projectsi" class="projects">
+                        <a class="navtext" href="./Assets/Projects.html"><span>P</span><span>r</span><span>o</span><span>j</span><span>e</span><span>c</span><span>t</span><span>s</span></a>
+                    </li>
+                    <li id="menu" class="menu" onclick="showMenu()">
+                        <a class="navtext" href="#"><span>M</span><span>e</span><span>n</span><span>u</span></a>
+                    </li>
+                    <li id="close" class="close" onclick="hideMenu()">
+                        <a class="navtext" href="#"><span>C</span><span>l</span><span>o</span><span>s</span><span>e</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="mainpage">
+            <div class="herocontainer">
+                <img class="heroloopimg" src="./Assets/pngs/HeroLoop.png" alt="Loop">
+            </div>
+            <div class="mobilenav" id="menudiv">
+                <ul>
+                    <li class="mobli"><a class="mobnavfont" href="./Assets/about.html">About</a></li>
+                    <li class="mobli"><a class="mobnavfont" href="./Assets/Projects.html">Projects</a></li>
+                    <li class="mobli"><a class="mobnavfont" href="#">More</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <section class="sec1">
+        <video playsInline autoplay muted loop class="circlevid" src="./Assets/pngs/oldcomputer.mp4"></video>
+        <div class="WelcomeContainer">
+            <p class="welcome">Welcome</p>
+            <span class="year">20<br>24</span>
+        </div>
+    </section>
+    <section class="sec2"></section>
+    <section class="footer">
+        <img class="footerlogo" src="./Assets/pngs/HalfLOGO.png" alt="Logo">
+        <div class="footerinfo">
+            <div class="middlediv">
+                <div class="footerlinkdiv">
+                    <div class="footerlinks">
+                        <h2 class="footermaintext">Links</h2>
+                        <p><a class="footertext" href="#">About</a></p>
+                        <p><a class="footertext" href="#">Projects</a></p>
+                        <p><a class="footertext" href="#">More</a></p>
+                    </div>
+                    <div class="footerlinks">
+                        <h2 class="footermaintext">Other Links</h2>
+                        <p><a class="footertext" href="#">Blender.Org</a></p>
+                        <p><a class="footertext" href="#">Projects</a></p>
+                        <p><a class="footertext" href="#">More</a></p>
+                    </div>
+                </div>
+                <div class="sociallinks">
+                    <h2 class="footermaintext">Follow Me</h2>
+                    <div class="svgtext">
+                        <div class="youtubecontainer">
+                            <svg class="youtubelogo" width="120" height="120" viewBox="0 0 120 120" fill="none">
+                                <g clip-path="url(#clip0_15_3)">
+                                <path d="M60 20C64.275 20 68.66 20.11 72.91 20.29L77.93 20.53L82.735 20.815L87.235 21.12L91.345 21.44C95.8053 21.7814 100.002 23.6847 103.198 26.8152C106.393 29.9457 108.382 34.1027 108.815 38.555L109.015 40.68L109.39 45.23C109.74 49.945 110 55.085 110 60C110 64.915 109.74 70.055 109.39 74.77L109.015 79.32C108.95 80.05 108.885 80.755 108.815 81.445C108.382 85.8981 106.392 90.0558 103.196 93.1863C99.9993 96.3169 95.8011 98.2197 91.34 98.56L87.24 98.875L82.74 99.185L77.93 99.47L72.91 99.71C68.6092 99.8969 64.3049 99.9936 60 100C55.6951 99.9936 51.3908 99.8969 47.09 99.71L42.07 99.47L37.265 99.185L32.765 98.875L28.655 98.56C24.1948 98.2186 19.9978 96.3153 16.8024 93.1848C13.607 90.0543 11.6179 85.8973 11.185 81.445L10.985 79.32L10.61 74.77C10.2277 69.8557 10.0242 64.9291 10 60C10 55.085 10.26 49.945 10.61 45.23L10.985 40.68C11.05 39.95 11.115 39.245 11.185 38.555C11.6177 34.1035 13.6061 29.9471 16.8005 26.8167C19.9948 23.6864 24.1906 21.7825 28.65 21.44L32.755 21.12L37.255 20.815L42.065 20.53L47.085 20.29C51.3875 20.1032 55.6935 20.0065 60 20ZM60 30C55.875 30 51.63 30.11 47.5 30.28L42.61 30.515L37.915 30.79L33.505 31.09L29.465 31.405C27.3417 31.5557 25.3402 32.4532 23.8155 33.9386C22.2907 35.424 21.3411 37.4013 21.135 39.52C20.55 45.565 20 53.09 20 60C20 66.91 20.55 74.435 21.135 80.48C21.56 84.84 25.02 88.23 29.465 88.595L33.505 88.905L37.915 89.205L42.61 89.485L47.5 89.72C51.63 89.89 55.875 90 60 90C64.125 90 68.37 89.89 72.5 89.72L77.39 89.485L82.085 89.21L86.495 88.91L90.535 88.595C92.6584 88.4444 94.6598 87.5468 96.1845 86.0614C97.7093 84.576 98.6589 82.5987 98.865 80.48C99.45 74.435 100 66.91 100 60C100 53.09 99.45 45.565 98.865 39.52C98.6589 37.4013 97.7093 35.424 96.1845 33.9386C94.6598 32.4532 92.6584 31.5557 90.535 31.405L86.495 31.095L82.085 30.795L77.39 30.515L72.5 30.28C68.3357 30.1008 64.1682 30.0075 60 30ZM50 47.875C49.9997 47.3863 50.1187 46.905 50.3468 46.4728C50.5749 46.0406 50.9051 45.6707 51.3088 45.3952C51.7124 45.1197 52.1772 44.947 52.6628 44.892C53.1484 44.8371 53.64 44.9016 54.095 45.08L54.5 45.28L75.5 57.4C75.9182 57.6413 76.272 57.9799 76.5313 58.3872C76.7906 58.7944 76.9478 59.2583 76.9895 59.7392C77.0312 60.2202 76.9562 60.7042 76.7709 61.15C76.5856 61.5958 76.2954 61.9903 75.925 62.3L75.5 62.6L54.5 74.725C54.0768 74.9701 53.6001 75.108 53.1115 75.1267C52.6228 75.1454 52.137 75.0444 51.6963 74.8324C51.2556 74.6204 50.8734 74.3039 50.583 73.9105C50.2926 73.5171 50.1027 73.0586 50.03 72.575L50 72.125V47.875Z"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_15_3">
+                                <rect width="120" height="120" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg> 
+                            <a class="youtubetext" href="#">YouTube</a>
+                        </div> 
+                        <div class="facebookcontainer">
+                            <svg class="facebooksvg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+                                <path d="M85 10H70C63.3696 10 57.0107 12.6339 52.3223 17.3223C47.6339 22.0107 45 28.3696 45 35V50H30V70H45V110H65V70H80L85 50H65V35C65 33.6739 65.5268 32.4021 66.4645 31.4645C67.4021 30.5268 68.6739 30 70 30H85V10Z" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <a class="facebooktext" href="#">Facebook</a>    
+                        </div>                          
+                    </div>
+                </div>
+            </div>
+            <div class="divlast">
+                <p class="copyright">© 2024 BAADKAR</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        var menu1 = document.getElementById('menudiv');
+        var menuicon = document.getElementById('menu');
+        var closeicon = document.getElementById('close');
+        var abouticon = document.getElementById('abouti');
+        var proicon = document.getElementById('projectsi');
+        function showMenu(){
+            menu1.style.right = "0";
+            menuicon.style.display = "none";
+            closeicon.style.display = "block";
+            abouticon.style.display = "none";
+            proicon.style.display = "none";
+        }
+        function hideMenu(){
+            menu1.style.right = "-100%";
+            menuicon.style.display = "block";
+            closeicon.style.display = "none";
+            abouticon.style.display = "none";
+            proicon.style.display = "none";
+        }
+    </script>
+</body>
 </html>
